@@ -1,0 +1,30 @@
+﻿Quinn
+=====
+/  Add money - Half done
+
+*  Add combo hits and crazy stuff like that
+
+*  Add achievments - Half done
+
+/  Add Phone compatible stuff - Nearly done
+
+/  Test on Dada's Windows Phone
+
+*  Test on Xbox 360
+
+/  Add sounds and (maybe) music
+
+/  Add the right graphics
+
+*/ Add stuff like partys(of polititions), an arm to take your money and to make money pop out of every fifth politition
+
+/  Publish on Windows Live Marketplace
+
+-------Key------
+/ = Definetly do
+* = Optional
+*/ = ?
+
+Russ
+=====
+Save/Load function - Sort of done
