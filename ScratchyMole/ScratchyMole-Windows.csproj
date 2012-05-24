@@ -100,10 +100,9 @@
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
-    <Content Include="ToDo.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\whack a moleContent\GameContent.contentproj">
+    <ProjectReference Include="..\ScratchyMoleContent\ScratchyMoleContent.contentproj">
       <Project>{5445846E-AA81-4DE2-A3BE-85538854562E}</Project>
       <Name>GameContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>

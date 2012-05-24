@@ -86,7 +86,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
-    <Content Include="ToDo.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Background.png">
@@ -144,7 +143,9 @@
     <Reference Include="Microsoft.Xna.Framework.GamerServices" />
     <Reference Include="Microsoft.Xna.Framework.Graphics" />
     <Reference Include="mscorlib" />
-    <Reference Include="ScratchyXNAPhone, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ScratchyXNAPhone">
+      <HintPath>..\..\ScratchyXNA\ScratchyXnaPhone\bin\Windows Phone\Debug\ScratchyXNAPhone.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
