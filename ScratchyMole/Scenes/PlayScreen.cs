@@ -45,7 +45,7 @@ namespace ScratchyXna
             //Add the sounds
             AddSound("hit");
 
-            // Create our sprites
+            // Create the sprites
             building = AddSprite<BuildingSprite>();
             levelsprite = AddSprite<LevelSprite>();
             achievmentthing = AddSprite<AchievmentThingSprite>();
@@ -311,6 +311,10 @@ namespace ScratchyXna
                 if (Level == 10)
                 {
                     GetAchievment(AchievmentTypes.Level10);
+                }
+                if (Level == 2)
+                {
+                    GetAchievment(AchievmentTypes.LevelUpAchievment);
                 }
             }
             PlaySound("hit");
