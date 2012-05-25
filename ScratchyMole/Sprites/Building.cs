@@ -14,7 +14,7 @@ namespace ScratchyXna
     {
         public override void Load()
         {
-            SetCostume("Building");
+            SetCostume("Buildings/TestBuilding");
             Scale = 200f / 800f;
             Layer = 10;
         }

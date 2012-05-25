@@ -20,7 +20,7 @@ namespace ScratchyXna
 
         public override void Load()
         {
-            SetCostume("Mole").YCenter = VerticalAlignments.Top;
+            SetCostume("Moles/TestMole").YCenter = VerticalAlignments.Top;
             Scale = 0.3f;
             State = MoleStates.Waiting;
             Hide();

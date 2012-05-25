@@ -14,7 +14,7 @@ namespace ScratchyXna
     {
         public override void Load()
         {
-            SetCostume("TitleMole").YCenter = VerticalAlignments.Top;
+            SetCostume("Moles/TestTitleMole").YCenter = VerticalAlignments.Top;
             Scale = 1;
         }
 

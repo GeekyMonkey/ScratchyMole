@@ -9,6 +9,7 @@ namespace ScratchyXna
     {
         FirstHit,
         Level10,
-        Hit100
+        Hit100,
+        LevelUpAchievment
     }
 }

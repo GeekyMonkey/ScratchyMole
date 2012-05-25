@@ -36,6 +36,9 @@ namespace ScratchyXna
                 case AchievmentTypes.Level10:
                     SetCostume("Achievments/Level10Achievment");
                     break;
+                case AchievmentTypes.LevelUpAchievment:
+                    SetCostume("Achievments/LevelUpAchievment");
+                    break;
             }
         }
         

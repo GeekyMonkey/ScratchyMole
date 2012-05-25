@@ -1,7 +1,4 @@
 Content\Costumes\Achievments\FirstHitAchievment.xnb
-Content\Costumes\TitleMole.xnb
-Content\Costumes\building.xnb
-Content\Costumes\Mole.xnb
 Content\Costumes\hammer 2.xnb
 Content\Costumes\window.xnb
 Content\Costumes\levelup.xnb
@@ -9,3 +6,13 @@ Content\Costumes\Achievments\Hit100Achievment.xnb
 Content\Costumes\Achievments\Level10Achievment.xnb
 Content\Fonts\QuartzMS.xnb
 Content\Sounds\hit.xnb
+Content\Costumes\Achievments\FirstHitAchievmentOnScreen.xnb
+Content\Costumes\Achievments\Hit100AchievmentOnScreen.xnb
+Content\Costumes\Achievments\Level10AchievmentOnScreen.xnb
+Content\Costumes\Achievments\LevelUpAchievment.xnb
+Content\Costumes\Achievments\LevelUpAchievmentOnScreen.xnb
+Content\Costumes\Buildings\TestBuilding.xnb
+Content\Costumes\Buildings\leinsterhouse1.xnb
+Content\Costumes\Buildings\leinsterhouse2.xnb
+Content\Costumes\Moles\TestMole.xnb
+Content\Costumes\Moles\TestTitleMole.xnb

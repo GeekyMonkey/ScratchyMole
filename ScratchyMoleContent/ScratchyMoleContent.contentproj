@@ -37,27 +37,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Costumes\TitleMole.png">
-      <Name>TitleMole</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Costumes\building.png">
-      <Name>building</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Costumes\Mole.png">
-      <Name>Mole</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Costumes\hammer 2.png">
       <Name>hammer 2</Name>
       <Importer>TextureImporter</Importer>
@@ -100,6 +79,70 @@
   <ItemGroup>
     <Compile Include="Costumes\Achievments\Level10Achievment.png">
       <Name>Level10Achievment</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Costumes\Achievments\FirstHitAchievmentOnScreen.png">
+      <Name>FirstHitAchievmentOnScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Costumes\Achievments\Hit100AchievmentOnScreen.png">
+      <Name>Hit100AchievmentOnScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Costumes\Achievments\Level10AchievmentOnScreen.png">
+      <Name>Level10AchievmentOnScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Costumes\Achievments\LevelUpAchievment.png">
+      <Name>LevelUpAchievment</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Costumes\Achievments\LevelUpAchievmentOnScreen.png">
+      <Name>LevelUpAchievmentOnScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Costumes\Buildings\TestBuilding.png">
+      <Name>TestBuilding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Costumes\Buildings\leinsterhouse1.jpg">
+      <Name>leinsterhouse1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Costumes\Buildings\leinsterhouse2.jpg">
+      <Name>leinsterhouse2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Costumes\Moles\TestMole.png">
+      <Name>TestMole</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Costumes\Moles\TestTitleMole.png">
+      <Name>TestTitleMole</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
