@@ -17,7 +17,6 @@ namespace ScratchyXna
             SetCostume("Buildings/LeinsterHouse-NoWindows");
             Scale = 200f / 800f;
             Layer = 10;
-            GhostEffect = 50;
         }
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)

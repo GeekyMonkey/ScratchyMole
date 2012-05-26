@@ -116,7 +116,6 @@ namespace ScratchyXna
         /// <summary>
         /// Mole update (60 times a second)
         /// </summary>
-        /// <param name="gameTime"></param>
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
             if (State == MoleStates.Rising)

@@ -41,7 +41,6 @@ namespace ScratchyXna
         {
             BackgroundColor = Color.Black;
             FontName = "QuartzMS";
-            AddMolePlaces();
 
             //Add the sounds
             AddSound("hit");
@@ -51,13 +50,6 @@ namespace ScratchyXna
             levelsprite = AddSprite<LevelSprite>();
             achievmentthing = AddSprite<AchievmentThingSprite>();
             //hammer = AddSprite<HammerSprite>();
-            for (int i = 0; i <= 7; i++)
-            {
-                WindowSprite window = AddSprite<WindowSprite>();
-                window.Position = moleplaces[i];
-                window.Y -= 8;
-                window.AddLayers(i);
-            }
 
             //Create the texts
             ScoreText = AddText(new Text
@@ -89,8 +81,9 @@ namespace ScratchyXna
         }
         //Add the list of places (Vector2s) that the mole can pop out of
         //TODO : Not use this list because it was made only for testing
-        void AddMolePlaces()
+        void AddTestMolePlaces()
         {
+            moleplaces.Clear();
             //The first(top)row
             //The left
             moleplaces.Add(new Vector2(-23, 75));
@@ -116,27 +109,28 @@ namespace ScratchyXna
         //TODO : Use this list instead of the above list
         void AddFirstMolePlaces()
         {
+            moleplaces.Clear();
             //The first(top)row
             //The left
-            moleplaces.Add(new Vector2(-33, 30));
+            moleplaces.Add(new Vector2(-37, 36));
             //The middle
-            moleplaces.Add(new Vector2(0, 30));
+            moleplaces.Add(new Vector2(0, 36));
             //The right
-            moleplaces.Add(new Vector2(34, 30));
+            moleplaces.Add(new Vector2(38, 36));
             //The second(middle)row
             //The left
-            moleplaces.Add(new Vector2(-33, -21));
+            moleplaces.Add(new Vector2(-37, -19));
             //The middle
-            moleplaces.Add(new Vector2(0, -21));
+            moleplaces.Add(new Vector2(0, -19));
             //The right
-            moleplaces.Add(new Vector2(34, -21));
+            moleplaces.Add(new Vector2(38, -19));
             //The third(bottom)row
             //The left
-            moleplaces.Add(new Vector2(-33, -73));
+            moleplaces.Add(new Vector2(-37, -72));
             //The middle
             //The middle is the door, so I'm not using it for now.
             //The right
-            moleplaces.Add(new Vector2(34, -73));
+            moleplaces.Add(new Vector2(38, -72));
         }
         void MissedMoles(int missed)
         {
@@ -206,6 +200,9 @@ namespace ScratchyXna
             Score = 0;
             Level = 0;
             StartLevel();
+
+            // Start poppin
+            Wait(MolePopSecs, MolePop);
         }
 
         /// <summary>
@@ -214,7 +211,29 @@ namespace ScratchyXna
         private void StartLevel()
         {
             Level += 1;
-            Wait(MolePopSecs, MolePop);
+
+            switch (Level)
+            {
+                case 0:
+                    building.SetCostume("Buildings/TestBuilding");
+                    AddTestMolePlaces();
+                    break;
+                case 1:
+                default:
+                    building.SetCostume("Buildings/LeinsterHouse-NoWindows");
+                    AddFirstMolePlaces();
+                    break;
+            }
+
+            Sprites.RemoveAll(s => s is WindowSprite);
+            for (int i = 0; i < moleplaces.Count; i++)
+            {
+                WindowSprite window = AddSprite<WindowSprite>();
+                window.Position = moleplaces[i];
+                window.Y -= 8;
+                window.AddLayers(i);
+            }
+
         }
 
         /// <summary>
@@ -332,7 +351,7 @@ namespace ScratchyXna
             }
             if (Score % 10 == 0)
             {
-                Level += 1;
+                StartLevel();
                 levelsprite.LevelUp();
 
                 //Achievment for getting to Level 10
