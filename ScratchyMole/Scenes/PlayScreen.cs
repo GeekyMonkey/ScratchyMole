@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace ScratchyXna
 {
+
     public class PlayScreen : Scene
     {
         //Variables
@@ -17,7 +18,7 @@ namespace ScratchyXna
         int level;
         bool ColorDebugMode = false;
         bool molesDirty = false;
-        
+
         // Sprites on the screen
         BuildingSprite building;
         LevelSprite levelsprite;
@@ -27,7 +28,7 @@ namespace ScratchyXna
         //The lists
         List<MoleSprite> moles = new List<MoleSprite>(8);
         List<Vector2> moleplaces = new List<Vector2>(8);
-        
+
         // Text on the screen
         Text ScoreText;
         Text MoneyText;
@@ -57,7 +58,7 @@ namespace ScratchyXna
                 window.Y -= 8;
                 window.AddLayers(i);
             }
-            
+
             //Create the texts
             ScoreText = AddText(new Text
             {
@@ -175,7 +176,7 @@ namespace ScratchyXna
         /// </summary>
         void MolePop()
         {
-            List<int> availablePositions = Enumerable.Range(0,8).ToList();
+            List<int> availablePositions = Enumerable.Range(0, 8).ToList();
             foreach (MoleSprite mole in moles)
             {
                 if (availablePositions.Contains(mole.PositionNum))
