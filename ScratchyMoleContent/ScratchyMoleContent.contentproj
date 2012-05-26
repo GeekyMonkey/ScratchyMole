@@ -124,16 +124,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Costumes\Buildings\leinsterhouse1.jpg">
-      <Name>leinsterhouse1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Costumes\Buildings\leinsterhouse2.jpg">
-      <Name>leinsterhouse2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Costumes\Moles\TestMole.png">
@@ -143,6 +133,13 @@
     </Compile>
     <Compile Include="Costumes\Moles\TestTitleMole.png">
       <Name>TestTitleMole</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Costumes\Buildings\LeinsterHouse-NoWindows.png">
+      <Name>LeinsterHouse-NoWindows</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
