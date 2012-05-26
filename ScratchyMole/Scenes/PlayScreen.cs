@@ -87,6 +87,7 @@ namespace ScratchyXna
             });
         }
         //Add the list of places (Vector2s) that the mole can pop out of
+        //TODO : Not use this list because it was made only for testing
         void AddMolePlaces()
         {
             //The first(top)row
@@ -109,6 +110,32 @@ namespace ScratchyXna
             moleplaces.Add(new Vector2(-23, -50));
             //The right
             moleplaces.Add(new Vector2(20, -50));
+        }
+        //Add the list of places (Vector2s) that the mole can pop out of
+        //TODO : Use this list instead of the above list
+        void AddFirstMolePlaces()
+        {
+            //The first(top)row
+            //The left
+            moleplaces.Add(new Vector2(-33, 30));
+            //The middle
+            moleplaces.Add(new Vector2(0, 30));
+            //The right
+            moleplaces.Add(new Vector2(34, 30));
+            //The second(middle)row
+            //The left
+            moleplaces.Add(new Vector2(-33, -21));
+            //The middle
+            moleplaces.Add(new Vector2(0, -21));
+            //The right
+            moleplaces.Add(new Vector2(34, -21));
+            //The third(bottom)row
+            //The left
+            moleplaces.Add(new Vector2(-33, -73));
+            //The middle
+            //The middle is the door, so I'm not using it for now.
+            //The right
+            moleplaces.Add(new Vector2(34, -73));
         }
         void MissedMoles(int missed)
         {
