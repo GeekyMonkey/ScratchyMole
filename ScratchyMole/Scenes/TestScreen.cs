@@ -7,9 +7,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 #endregion
 
-namespace ScratchyXna.Screens
+namespace ScratchyXna
 {
-    class TestScreen : Scene
+    public class TestScreen : ScratchyXna.Scene
     {
         Text ScoreText;
         Text RestartText;

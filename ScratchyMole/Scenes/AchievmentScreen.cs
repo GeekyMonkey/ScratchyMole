@@ -9,7 +9,7 @@ using ScratchyXna;
 #endregion
 
 
-namespace ScratchyXna.Screens
+namespace ScratchyXna
 {
     public class AchievmentScreen : Scene
     {
