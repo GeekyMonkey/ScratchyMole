@@ -73,7 +73,7 @@ namespace ScratchyXna
         /// <summary>
         /// Start the game over screen
         /// </summary>
-        public override void StartScreen()
+        public override void StartScene()
         {
             PlayerData.Save();
 
@@ -110,7 +110,7 @@ namespace ScratchyXna
             if (Keyboard.KeyPressed(Keys.Space) || Mouse.Button1Pressed() || Touch.Taps.Any())
             {
                 //todo: also do this for xbox a button
-                ShowScreen("play");
+                ShowScene("play");
             }
 
             // Escape key to go back to the title screen
@@ -118,7 +118,7 @@ namespace ScratchyXna
             {
                 //todo: also do this for phone back button
                 //todo: also do this for the xbox b button
-                ShowScreen("title");
+                ShowScene("title");
             }
         }
 

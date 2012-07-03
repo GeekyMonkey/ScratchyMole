@@ -56,7 +56,7 @@ namespace ScratchyXna
         /// <summary>
         /// Start the achievment screen
         /// </summary>
-        public override void StartScreen()
+        public override void StartScene()
         {
             // Show or hide the sprites depending on if they were earned
             foreach (var typeEarned in AchievmentsEarned)

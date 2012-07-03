@@ -59,7 +59,7 @@ namespace ScratchyXna
         /// <summary>
         /// Start the game over screen
         /// </summary>
-        public override void StartScreen()
+        public override void StartScene()
         {
             // Display the final score
             ScoreText.Value = "Score: Kickass"; // +SpaceInvaders.score;
@@ -82,14 +82,14 @@ namespace ScratchyXna
             {
                 //todo: also do this for phone tap
                 //todo: also do this for xbox a button
-                ShowScreen("play");
+                ShowScene("play");
             }
 
             // Escape key to go back to the title screen
             if (Keyboard.KeyPressed(Keys.Escape))
             {
                 //todo: also do this for the xbox b button
-                ShowScreen("title");
+                ShowScene("title");
             }            
         }
     }

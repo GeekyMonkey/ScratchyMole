@@ -23,19 +23,19 @@ namespace ScratchyXna
         public AchievmentScreen achievments;
 
         /// <summary>
-        /// Load the screens needed for the game
+        /// Load the scenes needed for the game
         /// The first one added is where the game will start
         /// </summary>
-        public override void LoadGameScreens()
+        public override void LoadScenes()
         {
             PlayerData.Load();
             float screenScale = 1f / 2f;
             SetScreenSize(480f * screenScale, 800f * screenScale);
-            AddScreen<TitleScreen>();
-            AddScreen<PlayScreen>();
-            AddScreen<GameOverScreen>();
-            achievments = AddScreen<AchievmentScreen>();
-            AddScreen<TestScreen>();
+            AddScene<TitleScreen>();
+            AddScene<PlayScreen>();
+            AddScene<GameOverScreen>();
+            achievments = AddScene<AchievmentScreen>();
+            AddScene<TestScreen>();
         }
     }
 }

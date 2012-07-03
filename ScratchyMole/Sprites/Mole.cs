@@ -71,7 +71,7 @@ namespace ScratchyXna
             {
                 State = MoleStates.Done;
             }
-            (GameScreen as PlayScreen).MolesNeedCleanup();
+            (Scene as PlayScreen).MolesNeedCleanup();
         }
 
         public void Hit()

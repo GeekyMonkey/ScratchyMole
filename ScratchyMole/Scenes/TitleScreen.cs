@@ -49,7 +49,7 @@ namespace ScratchyXna
         /// Start the title screen
         /// This happens at the beginning of the game, and when you're done playing
         /// </summary>
-        public override void StartScreen()
+        public override void StartScene()
         {
             TitleMole.GlideTo(new Vector2(0, 0), 2);
         }
@@ -66,7 +66,7 @@ namespace ScratchyXna
                 (TitleMole.IsTouching(Touch.Taps))
                 )
             {
-                ShowScreen("Play");
+                ShowScene("Play");
             }
         }
     }

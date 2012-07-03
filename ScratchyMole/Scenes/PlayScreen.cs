@@ -140,7 +140,7 @@ namespace ScratchyXna
             }
             else
             {
-                ShowScreen("GameOver");
+                ShowScene("GameOver");
             }
         }
 
@@ -194,7 +194,7 @@ namespace ScratchyXna
         /// <summary>
         /// Start the play screen
         /// </summary>
-        public override void StartScreen()
+        public override void StartScene()
         {
             Money = 100;
             Score = 0;
@@ -251,7 +251,7 @@ namespace ScratchyXna
         /// <summary>
         /// Stop the play screen
         /// </summary>
-        public override void StopScreen()
+        public override void StopScene()
         {
             //todo : put something here
         }
@@ -315,7 +315,7 @@ namespace ScratchyXna
                 //todo: also do this for phone back button
                 //todo: also do this for xbox b button
                 PlayerData.Save();
-                ShowScreen("Title");
+                ShowScene("Title");
             }
             if (Mouse.Button1Pressed() && (building.IsTouching(Mouse.Position) == false))
             {
